@@ -32,6 +32,6 @@ function converter(data) {
 }
 
 function writeHtml(data,time) {
-    let message = `Total: ${data} bytes de transferência utilizada em ${time} segundos`
+    let message = `Total: ${data} bytes de transferência utilizados em ${time} segundos`
     inputData.result.innerHTML = message
 }
