@@ -21,6 +21,10 @@ Where:
 
 Expected: The bandwidtch in bytes.
 
+#### Help:
+
+"index.html" and "example.js" are unnecessary files, provided as an exemple of how to use this library on your front-end project.
+
 ## Aditional info:
 
 This application utilizes a library to work:
