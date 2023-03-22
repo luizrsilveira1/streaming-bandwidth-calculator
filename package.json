@@ -1,0 +1,23 @@
+{
+  "name": "streaming-bandwidth-calculator",
+  "version": "0.0.1",
+  "description": "A library to calculate the bandwidth consumed through streaming connections.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luizrsilveira1/streaming-bandwidth-calculator.git"
+  },
+  "author": "Luiz Ricardo Silveira",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/luizrsilveira1/streaming-bandwidth-calculator/issues"
+  },
+  "homepage": "https://github.com/luizrsilveira1/streaming-bandwidth-calculator#readme",
+  "dependencies": {
+    "bytes-and-bits-converter": "^0.1.0"
+  },
+  "type": "module"
+}

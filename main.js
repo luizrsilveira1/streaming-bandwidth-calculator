@@ -1,4 +1,4 @@
-import { calculator } from "./js-script.js";
+import { calculator } from "./node_modules/bytes-and-bits-converter/script.js";
 
 const inputData = {
     htmlKeyboardListener:document.getElementById('inputForm').addEventListener('keyup',runScript,false),
