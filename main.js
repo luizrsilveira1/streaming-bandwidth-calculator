@@ -1,0 +1,1 @@
+import { bandwidthCalc } from "./src/bandwidth-calc.js"
