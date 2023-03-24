@@ -1,4 +1,4 @@
-import { bandwidthCalc } from "../src/bandwidth-calc.js"
+import { bandwidthCalc } from "../main.js"
 
 const inputData = {
     htmlKeyboardListener:document.getElementById('inputForm').addEventListener('keyup',runScript,false),
