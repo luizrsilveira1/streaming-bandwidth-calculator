@@ -9,11 +9,13 @@ A library to calculate the bandwidth consumed through streaming connections.
 import { bandwidthCalc } from "./main.js"
 ```
 
-This library uses "type": "module" in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
+This library uses `"type": "module"` in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
 
 ### Call the function with the following syntax:
 
+```
 bandwidthCalc(inputBitrate,inputListeners,inputTime)
+```
 
 Where:
 
@@ -25,9 +27,9 @@ Expected: The bandwidtch in bytes.
 
 #### Help:
 
-"index.html" and "example.js" are unnecessary files, provided as an exemple of how to use this library on your front-end project.
+`index.html` and `example.js` are unnecessary files, provided as an exemple of how to use this library on your front-end project.
 
-"node-example.js" also is an unnecessary file, provided as an exemple of how to use this library on your Node.js project.
+`node-example.js` also is an unnecessary file, provided as an exemple of how to use this library on your Node.js project.
 
 ## Aditional info:
 
