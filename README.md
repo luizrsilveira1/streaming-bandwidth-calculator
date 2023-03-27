@@ -6,7 +6,7 @@ A library to calculate the bandwidth consumed through streaming connections.
 ### Import the library to your project:
 
 ```
-import { bandwidthCalc } from "./main.js"
+import { bandwidthCalc,calculator } from "./main.js"
 ```
 
 This library uses `"type": "module"` in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
@@ -25,6 +25,12 @@ Where:
 
 Expected: The bandwidtch in bytes.
 
+Also, you can convert numerous units of measurement from bits and bytes through the "calculator" function. Type this for more info:
+
+```
+calculator.help()
+```
+
 #### Help:
 
 `index.html` and `example.js` are unnecessary files, provided as an exemple of how to use this library on your front-end project.
@@ -40,10 +46,11 @@ This application utilizes a library to work:
 
 ## Changelog:
 
-### Last updates: [0.0.4] - 2023-03-27
+### Last updates: [0.0.5] - 2023-03-27
 
 Fixing the dependencies path to work with Node.js right after NPM install.
 
 #### Added:
 
-Properly exporting and importing the function `calculator` from `bytes=and-bits-converter`
+- Properly exporting and importing the function `calculator` from `bytes=and-bits-converter`
+- Fixing and improving README.md description.
