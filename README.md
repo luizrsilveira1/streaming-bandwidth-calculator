@@ -40,6 +40,10 @@ This application utilizes a library to work:
 
 ## Changelog:
 
-### Last updates: [0.0.3] - 2023-03-27
+### Last updates: [0.0.4] - 2023-03-27
 
 Fixing the dependencies path to work with Node.js right after NPM install.
+
+#### Added:
+
+Properly exporting and importing the function `calculator` from `bytes=and-bits-converter`
