@@ -1,4 +1,4 @@
-import { calculator } from "../node_modules/bytes-and-bits-converter/script.js"
+import { calculator } from "../../bytes-and-bits-converter/script.js"
 
 function bandwidthCalc(inputBitrate,inputListeners,inputTime) {
     let byteString = calculator.convertBitToByte(inputBitrate)
