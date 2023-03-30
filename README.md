@@ -1,3 +1,5 @@
+## Note: I am not a software developer. This project was made solely and exclusively for personal learning purposes.
+
 # streaming-bandwidth-calculator
 A library to calculate the bandwidth consumed through streaming connections.
 
