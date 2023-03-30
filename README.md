@@ -14,7 +14,7 @@ npm i streaming-bandwidth-calculator
 ### Import the library to your project:
 
 ```
-import { bandwidthCalc,calculator } from "./main.js"
+import { calculator,bandwidthCalc } from './node_modules/streaming-bandwidth-calculator/main.js'
 ```
 
 This library uses `"type": "module"` in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
