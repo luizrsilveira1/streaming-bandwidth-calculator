@@ -33,7 +33,7 @@ Where:
 
 Expected: The bandwidtch in bytes.
 
-Also, you can convert numerous units of measurement from bits and bytes through the "calculator" function. Type this for more info:
+Also, you can convert numerous units of measurement from bits and bytes through the `calculator` function. Type this for more info:
 
 ```
 calculator.help()
@@ -54,7 +54,7 @@ This application utilizes a library to work:
 
 ## Changelog:
 
-### Last updates: [0.0.5] - 2023-03-27
+### Last updates: [0.0.6] - 2023-03-30
 
 Fixing the dependencies path to work with Node.js right after NPM install.
 
@@ -62,3 +62,4 @@ Fixing the dependencies path to work with Node.js right after NPM install.
 
 - Properly exporting and importing the function `calculator` from `bytes=and-bits-converter`
 - Fixing and improving README.md description.
+- Made the Github repository public.
