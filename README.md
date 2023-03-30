@@ -5,6 +5,12 @@ A library to calculate the bandwidth consumed through streaming connections.
 
 ## How to use:
 
+### Install the library via [NPM](https://www.npmjs.com/package/streaming-bandwidth-calculator):
+
+```
+npm i streaming-bandwidth-calculator
+```
+
 ### Import the library to your project:
 
 ```
