@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [0.0.6] - 2023-04-03
+
+Some changes on the input and output numbers, and new functions available.
+
+### Added:
+
+- New function to calculate listeners based on bitrate, time and bandwidth.
+- New function to calculate time based on bitrate, listeners and bandwidth.
+- New function to calculate bitrate based on time, listeners and bandwidth.
+- All the functions should be called through the `streaming` method. Eg: streaming.bandwidth(bitrate,listeners,time), streaming.listeners(bitrate,time,bandwidth)
+
+### Changed
+- The `bandwidthCalc` method still works through the compatibility mode.
+- All inputs should be on the most basic unit (Bits and Bytes)
+- The return will be always on the most basic unit (Bits and Bytes)
+
 ## [0.0.5] - 2023-03-27
 
 Fixing the dependencies path to work with Node.js right after NPM install.

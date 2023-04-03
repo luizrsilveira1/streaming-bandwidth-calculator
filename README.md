@@ -46,11 +46,18 @@ This application utilizes a library to work:
 
 ## Changelog:
 
-### Last updates: [0.0.5] - 2023-03-27
+### Last updates: [0.0.6] - 2023-04-03
 
-Fixing the dependencies path to work with Node.js right after NPM install.
+Some changes on the input and output numbers, and new functions available.
 
 #### Added:
 
-- Properly exporting and importing the function `calculator` from `bytes=and-bits-converter`
-- Fixing and improving README.md description.
+- New function to calculate listeners based on bitrate, time and bandwidth.
+- New function to calculate time based on bitrate, listeners and bandwidth.
+- New function to calculate bitrate based on time, listeners and bandwidth.
+- All the functions should be called through the `streaming` method. Eg: streaming.bandwidth(bitrate,listeners,time), streaming.listeners(bitrate,time,bandwidth)
+
+#### Changed
+- The `bandwidthCalc` method still works through the compatibility mode.
+- All inputs should be on the most basic unit (Bits and Bytes)
+- The return will be always on the most basic unit (Bits and Bytes)
