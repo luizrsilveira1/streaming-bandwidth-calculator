@@ -2,42 +2,92 @@
 
 # streaming-bandwidth-calculator
 A library to calculate the bandwidth consumed through streaming connections.
+## Examples:
+- Get total listeners from bitrate, time and bandwidth
+- Get total bandwidth consumed from bitrate, time and listeners
 
 ## How to use:
 
-### Install the library via [NPM](https://www.npmjs.com/package/streaming-bandwidth-calculator):
+### Front end implementation:
+
+Install the library via [NPM](https://www.npmjs.com/package/streaming-bandwidth-calculator):
 
 ```
 npm i streaming-bandwidth-calculator
 ```
 
-### Import the library to your project:
+Copy the `/src` folder and `main.js` file from `/node_modules` to your working directory.
+
+If you want to use this project inside your .js file, import the library as follows:
 
 ```
-import { calculator,bandwidthCalc } from './node_modules/streaming-bandwidth-calculator/main.js'
+import { calculator,streaming } from './main.js'
 ```
 
 This library uses `"type": "module"` in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
 
-### Call the function with the following syntax:
+If you want to use this project right through your HTML file, import the library at the end of the `<body>` tag, as follows:
 
 ```
-bandwidthCalc(inputBitrate,inputListeners,inputTime)
+<body>
+...your html code...
+<script src="./main.js" type="module"></script
+</body>
 ```
+
+Inside the `demo` folder, `index.html` and `example.js` provides an example of how to use the libray on the front-end.
+
+### Back-end implementation:
+
+Install the library via [NPM](https://www.npmjs.com/package/streaming-bandwidth-calculator):
+
+```
+npm i streaming-bandwidth-calculator
+```
+
+For Node.js, import the library as follows:
+
+```
+import { calculator,streaming } from "./node_modules/streaming-bandwidth-calculator/main.js"
+```
+
+This library uses `"type": "module"` in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
+
+Inside the `demo` folder, `node-example.js` provide a simple example of how to use the library on the back-end.
+
+### Syntax
+
+```
+streaming.bandwidth(inputBitrate,inputListeners,inputTime)
+```
+Return: bandwidth in bytes
+```
+streaming.listeners(inputBitrate,inputTime,inputListeners)
+```
+Return: Average amount of listeners
+```
+streaming.time(inputBitrate,inputListeners,inputBandwidth)
+```
+Return: Average amount of time per listener in seconds
+```
+streaming.bitrate(inputListeners,inputTime,inputBandwidth)
+```
+Return: Maximum bitrate in bits
 
 Where:
 
-- inputBitrate: the streaming bitrate. Ex: 128, 192, 320, etc. Should be only numbers.
+- inputBitrate: the streaming bitrate. Ex: 128000, 192000, 320000, etc. Should be only numbers and in bits
 - inputListeners: the average listeners number.
-- inputTime: the total time connected.
-
-Expected: The bandwidtch in bytes.
+- inputTime: the total time connected in seconds.
+- inputBandwidth: the total bandwidth consumed in bytes.
 
 Also, you can convert numerous units of measurement from bits and bytes through the `calculator` function. Type this for more info:
 
 ```
 calculator.help()
 ```
+
+This library uses `"type": "module"` in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
 
 #### Help:
 
@@ -54,7 +104,7 @@ This application utilizes a library to work:
 
 ## Changelog:
 
-### Last updates: [0.0.7] - 2023-04-03
+### Last updates: [0.0.8] - 2023-04-03
 
 Some changes on the input and output numbers, and new functions available.
 
