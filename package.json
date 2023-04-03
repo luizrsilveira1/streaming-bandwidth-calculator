@@ -1,6 +1,6 @@
 {
   "name": "streaming-bandwidth-calculator",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A library to calculate the bandwidth consumed through streaming connections.",
   "main": "main.js",
   "scripts": {
