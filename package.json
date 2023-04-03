@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/luizrsilveira1/streaming-bandwidth-calculator#readme",
   "dependencies": {
-    "bytes-and-bits-converter": "^0.1.0"
+    "bytes-and-bits-converter": "^0.1.5"
   },
   "type": "module"
 }
