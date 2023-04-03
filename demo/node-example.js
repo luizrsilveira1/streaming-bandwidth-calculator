@@ -1,4 +1,4 @@
-import { bandwidthCalc, streaming } from "../src/bandwidth-calc.js";
+import { bandwidthCalc, streaming } from "../main.js";
 
 //bitrate should be in bps (bits / second)
 //listeners should be... listeners

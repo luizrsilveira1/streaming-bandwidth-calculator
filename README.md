@@ -54,7 +54,7 @@ This application utilizes a library to work:
 
 ## Changelog:
 
-### Last updates: [0.0.6] - 2023-03-30
+### Last updates: [0.0.7] - 2023-04-03
 
 Some changes on the input and output numbers, and new functions available.
 
