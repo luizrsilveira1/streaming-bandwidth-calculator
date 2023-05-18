@@ -1,4 +1,5 @@
-import { calculator } from "../../bytes-and-bits-converter/script.js"
+// import { calculator } from "../../bytes-and-bits-converter/script.js"
+const calculator = require('bytes-and-bits-converter')
 
 const streaming = {
     bandwidth(inputBitrate,inputListeners,inputTime) {
@@ -18,4 +19,5 @@ const streaming = {
 //Keep compatibility with version 0.0.5
 const bandwidthCalc = streaming.bandwidth
 
-export {bandwidthCalc, streaming}
+// export {bandwidthCalc, streaming}
+module.exports = { bandwidthCalc,streaming }

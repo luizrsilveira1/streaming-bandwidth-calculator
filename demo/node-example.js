@@ -1,4 +1,5 @@
-import { bandwidthCalc, streaming } from "../main.js";
+// import { bandwidthCalc, streaming } from "../main.js";
+const { bandwidthCalc,streaming } = require('../main')
 
 //bitrate should be in bps (bits / second)
 //listeners should be... listeners

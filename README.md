@@ -8,6 +8,24 @@ A library to calculate the bandwidth consumed through streaming connections.
 
 ## How to use:
 
+### Back-end implementation:
+
+Install the library via [NPM](https://www.npmjs.com/package/streaming-bandwidth-calculator):
+
+```
+npm i streaming-bandwidth-calculator
+```
+
+For Node.js, import the library as follows:
+
+```
+const { calculator,streaming } = require('streaming-bandwidth-calculator')
+```
+
+Inside the `demo` folder, `node-example.js` provide a simple example of how to use the library on the back-end.
+
+If you're using node type as ES Modules, you'll need to comment all "require" and "module.exports" from the .js files, and uncomment the "import" and "export" lines.
+
 ### Front end implementation:
 
 Install the library via [NPM](https://www.npmjs.com/package/streaming-bandwidth-calculator):
@@ -18,13 +36,22 @@ npm i streaming-bandwidth-calculator
 
 Copy the `/src` folder and `main.js` file from `/node_modules` to your working directory.
 
-If you want to use this project inside your .js file, import the library as follows:
+In order to work on a browser, you'll need to make some changes in these files:
 
 ```
-import { calculator,streaming } from './main.js'
+./main.js
+./src/bandwidth-calc.js
 ```
 
-This library uses `"type": "module"` in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
+All you need to do is comment the lines using "require" or "module.exports" and uncomment the lines using "import" and "export", like this example on bandwidth-calc.js:
+
+```
+import { calculator } from "../../bytes-and-bits-converter/script.js"
+// const calculator = require('bytes-and-bits-converter')
+...
+export {bandwidthCalc, streaming}
+// module.exports = { bandwidthCalc,streaming }
+```
 
 If you want to use this project right through your HTML file, import the library at the end of the `<body>` tag, as follows:
 
@@ -37,23 +64,6 @@ If you want to use this project right through your HTML file, import the library
 
 Inside the `demo` folder, `index.html` and `example.js` provides an example of how to use the libray on the front-end.
 
-### Back-end implementation:
-
-Install the library via [NPM](https://www.npmjs.com/package/streaming-bandwidth-calculator):
-
-```
-npm i streaming-bandwidth-calculator
-```
-
-For Node.js, import the library as follows:
-
-```
-import { calculator,streaming } from "./node_modules/streaming-bandwidth-calculator/main.js"
-```
-
-This library uses `"type": "module"` in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
-
-Inside the `demo` folder, `node-example.js` provide a simple example of how to use the library on the back-end.
 
 ### Syntax
 
@@ -87,8 +97,6 @@ Also, you can convert numerous units of measurement from bits and bytes through 
 calculator.help()
 ```
 
-This library uses `"type": "module"` in package.json to work correctly on Node.js and front-end. This means that you need to use import instead of require.
-
 #### Help:
 
 `index.html` and `example.js` are unnecessary files, provided as an exemple of how to use this library on your front-end project.
@@ -104,18 +112,12 @@ This application utilizes a library to work:
 
 ## Changelog:
 
-### Last updates: [0.0.8] - 2023-04-03
+### Last updates: [0.0.9] - 2023-05-18
 
-Some changes on the input and output numbers, and new functions available.
+Updating "type" from ES Modules to CommonJS.
 
 #### Added:
+- On all .js files, added const xx = require('') and module.exports in order to work as CommonJS.
+- On all .js files, added commented import and export lines to facilitate any potential change on node type to ES Modules.
 
-- New function to calculate listeners based on bitrate, time and bandwidth.
-- New function to calculate time based on bitrate, listeners and bandwidth.
-- New function to calculate bitrate based on time, listeners and bandwidth.
-- All the functions should be called through the `streaming` method. Eg: streaming.bandwidth(bitrate,listeners,time), streaming.listeners(bitrate,time,bandwidth)
-
-#### Changed
-- The `bandwidthCalc` method still works through the compatibility mode.
-- All inputs should be on the most basic unit (Bits and Bytes)
-- The return will be always on the most basic unit (Bits and Bytes)
+### [View complete history](./CHANGELOG.md)

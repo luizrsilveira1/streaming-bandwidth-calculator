@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.1.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.0.9] - 2023-05-18
+
+Updating "type" from ES Modules to CommonJS.
+
+### Added:
+- On all .js files, added const xx = require('') and module.exports in order to work as CommonJS.
+- On all .js files, added commented import and export lines to facilitate any potential change on node type to ES Modules.
 
 ## [0.0.8] - 2023-04-03
 
